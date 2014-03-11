@@ -75,4 +75,37 @@ public class VarastoTest {
         varasto = new Varasto(-1,-1);
         varasto.toString();
     }
+    
+    @Test
+    public void varastoonNollanLisaysEiSaaMuuttaaSaldoa() {
+        double a = varasto.getSaldo();
+        varasto.lisaaVarastoon(-1);
+        assertTrue(a == varasto.getSaldo());     
+    }
+    
+    @Test
+    public void varastoonLisaysTuottaaTaydenVarastonJosLisataanEnemmanKuinMahtuu() {
+        varasto.lisaaVarastoon(11);
+        assertTrue(10.0 == varasto.getSaldo());
+    }
+    
+    @Test
+    public void lisaysToimiiOikein() {
+        varasto.lisaaVarastoon(4.9);
+        assertTrue(4.9 == varasto.getSaldo());
+    }
+    
+    @Test
+    public void josVarastostaEiOtaMitaanSaldoEiSaaMuuttua() {
+        varasto.lisaaVarastoon(4.0);
+        assertTrue(varasto.otaVarastosta(-1.0) == 0.0);
+        assertTrue(4.0 == varasto.getSaldo());
+    }
+    
+    @Test
+    public void josVarastostaOtetaanEnemmanKuinMitaSiellaOnSaadaanSaldonVerranOtettua() {
+        varasto.lisaaVarastoon(4.0);
+        assertTrue(varasto.otaVarastosta(7.0) == 4.0);
+        assertTrue(varasto.getSaldo() == 0.0);
+    }
 }
