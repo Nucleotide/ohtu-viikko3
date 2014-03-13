@@ -77,14 +77,14 @@ public class VarastoTest {
     }
     
     @Test
-    public void varastoonNollanLisaysEiSaaMuuttaaSaldoa() {
+    public void nollanLisaysEiSaaMuuttaaSaldoa() {
         double a = varasto.getSaldo();
         varasto.lisaaVarastoon(-1);
         assertTrue(a == varasto.getSaldo());     
     }
     
     @Test
-    public void varastoonLisaysTuottaaTaydenVarastonJosLisataanEnemmanKuinMahtuu() {
+    public void lisaysTuottaaTaydenVarastonJosLisataanEnemmanKuinMahtuu() {
         varasto.lisaaVarastoon(11);
         assertTrue(10.0 == varasto.getSaldo());
     }
@@ -106,6 +106,6 @@ public class VarastoTest {
     public void josVarastostaOtetaanEnemmanKuinMitaSiellaOnSaadaanSaldonVerranOtettua() {
         varasto.lisaaVarastoon(4.0);
         assertTrue(varasto.otaVarastosta(7.0) == 4.0);
-        assertTrue(varasto.getSaldo() == 0.0);
+        assertTrue(varasto.getSaldo() == 3.0);
     }
 }
