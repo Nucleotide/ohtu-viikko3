@@ -1,0 +1,1 @@
+Hello, Mr Jenkins, do you get post from github automagically?
