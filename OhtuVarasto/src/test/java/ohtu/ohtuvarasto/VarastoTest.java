@@ -106,6 +106,6 @@ public class VarastoTest {
     public void josVarastostaOtetaanEnemmanKuinMitaSiellaOnSaadaanSaldonVerranOtettua() {
         varasto.lisaaVarastoon(4.0);
         assertTrue(varasto.otaVarastosta(7.0) == 4.0);
-        assertTrue(varasto.getSaldo() == 3.0);
+        assertTrue(varasto.getSaldo() == 0.0);
     }
 }
