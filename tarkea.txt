@@ -1,0 +1,2 @@
+Lets write a few lines of text.
+So that we can learn how to merge conflicts.
