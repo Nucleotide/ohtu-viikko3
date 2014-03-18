@@ -1,2 +1,4 @@
 Lets write a few lines of text.
 So that we can learn how to merge conflicts.
+
+Now this editing is done in the master branch again
