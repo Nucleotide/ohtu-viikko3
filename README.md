@@ -1,6 +1,6 @@
-ohtu-viikko1
+ohtu-viikko3
 ============
 
-Jenkins:
+Viikon 1 Jenkins:
 
 http://ohtu.jamo.io/job/Nucleo-ohtu-viikko1/
