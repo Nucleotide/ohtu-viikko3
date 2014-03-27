@@ -18,6 +18,20 @@ public class Kauppa implements Verkkokauppa {
     @Override
     public void aloitaAsiointi() {
         ostoskori = new Ostoskori();
+        for (int i = 0; i < 5; i++) {
+            for(int j = 0; j < 2; j++) {
+                if (i == 1) {
+                    if (j == 1) {
+                        System.out.println("harhar");
+                    }
+                } else if (i == 0) {
+                    while (j < 2) {
+                        System.out.println("hurhur");
+                        j++;
+                    }
+                }
+            }
+        }
     }
 
     @Override

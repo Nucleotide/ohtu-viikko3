@@ -3,9 +3,20 @@
 <module name="Checker">
 
     <module name="TreeWalker">
-        <module name="JavadocMethod"/>
-        
-
+        <module name="MethodLength">
+            <property name="max" value="10"/>
+        </module>
+        <module name="NestedForDepth">
+            <property name="max" value="0"/>
+        </module>
+        <module name="NestedIfDepth"/>
+        <module name="CyclomaticComplexity">
+            <property name="max" value="3"/>
+        </module>
+    </module>
+    
+    <module name="StrictDuplicateCode">
+        <property name="min" value="5"/>
     </module>
 
 </module>
