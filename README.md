@@ -1,4 +1,4 @@
-ohtu-viikko4
+ohtu-viikko6
 ============
 
 Viikon 1 Jenkins:
